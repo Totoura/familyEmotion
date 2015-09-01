@@ -1,0 +1,88 @@
+body {
+  min-height: 200px;
+  padding-top: 50px;
+  font-family: 'Lato', sans-serif;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.head-box{
+	min-height: 640px;
+	height: 640px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+6,71bae7+43,b9e2f4+64,71bae7+64,71bae7+65,58bdd4+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 6%, #71bae7 43%, #b9e2f4 64%, #71bae7 64%, #71bae7 65%, #58bdd4 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(6%,#ffffff), color-stop(43%,#71bae7), color-stop(64%,#b9e2f4), color-stop(64%,#71bae7), color-stop(65%,#71bae7), color-stop(100%,#58bdd4)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 6%,#71bae7 43%,#b9e2f4 64%,#71bae7 64%,#71bae7 65%,#58bdd4 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 6%,#71bae7 43%,#b9e2f4 64%,#71bae7 64%,#71bae7 65%,#58bdd4 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 6%,#71bae7 43%,#b9e2f4 64%,#71bae7 64%,#71bae7 65%,#58bdd4 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 6%,#71bae7 43%,#b9e2f4 64%,#71bae7 64%,#71bae7 65%,#58bdd4 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#58bdd4',GradientType=0 ); /* IE6-9 */
+}
+
+.vertical-center {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.text-vertical-bottom {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+}
+h1{
+	font-family: 'Lato', sans-serif;
+}
+p{font-family: 'Lato', sans-serif;}
+.azul1{
+	color: #1e91ad !important;
+}
+.azul2{
+	color: #43acc7 !important;
+}
+.azul3{
+	color: #0b3745 !important;
+}
+.orange1{
+	color: #eb872c !important;
+}
+.orange2{
+	color: #f7bb8c !important;
+}
+.tagline1 {
+	font-family: 'Lato', sans-serif;
+	font-style: italic !important;
+    display: inline-block;
+}
+ section {
+    margin-bottom: 40px;
+}
+.sidebarBox {
+	position: relative;
+	top:-100px;
+}
+.scrollingBox {
+}
+.no-left-padding {
+    padding-left: 0 !important;
+}
+.no-right-padding {
+    padding-right: 0 !important;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #777777;
+    line-height: 1.5;
+}
+.empty-40{
+	border-color: transparent;
+	margin-top: 40px;
+	margin-bottom: 40px
+}
+.empty-70{
+	border-color: transparent;
+	margin-top: 70px;
+	margin-bottom: 70px
+}
