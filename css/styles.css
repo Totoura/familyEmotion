@@ -58,12 +58,6 @@ p{font-family: 'Lato', sans-serif;}
  section {
     margin-bottom: 40px;
 }
-.sidebarBox {
-	position: relative;
-	top:-100px;
-}
-.scrollingBox {
-}
 .no-left-padding {
     padding-left: 0 !important;
 }
@@ -76,6 +70,11 @@ p {
     color: #777777;
     line-height: 1.5;
 }
+.empty-20{
+	border-color: transparent;
+	margin-top: 20px;
+	margin-bottom: 20px
+}
 .empty-40{
 	border-color: transparent;
 	margin-top: 40px;
@@ -86,3 +85,35 @@ p {
 	margin-top: 70px;
 	margin-bottom: 70px
 }
+.balloonWrapper {
+	position: fixed;
+	top: 1500px;
+	-webkit-transition: all 1500ms ease;
+	-moz-transition: all 1500ms ease;
+	-o-transition: all 1500ms ease;
+	transition: all 1500ms ease;
+
+	/* enable hardware acceleration to fix laggy transitions */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	z-index: 1000;
+}
+.scrollActive .balloonWrapper {
+	position: fixed;
+}
+
+#family {
+  background: url(../img/family.jpg) no-repeat center bottom fixed; 
+  display: table;
+  height: 650px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
