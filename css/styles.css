@@ -61,6 +61,7 @@ h1{
 }
  section {
     margin-bottom: 40px;
+    padding-top: 80px;
 }
 .no-left-padding {
     padding-left: 0 !important;
@@ -258,14 +259,12 @@ h1.ribbon-azul {
     margin-top: 40px;
 }
 .kid{
-	z-index: 2;
-	position: absolute;
-	bottom:0;
-	left: 50%;
-	transform: translate(-70%, 0%);
+	z-index: 1;
+    position: absolute;
+    bottom: 30px;
 }
 .rainbow{
-	z-index: 3;
+	z-index: 5;
 	position: absolute;
 	bottom: 0;
 }
@@ -277,7 +276,10 @@ h1.ribbon-azul {
     height: 300px;
 }
 .slogan {
-    margin: 40px 0;
+    margin: 40px 0 0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .slogan img{
 	margin-left: auto;
