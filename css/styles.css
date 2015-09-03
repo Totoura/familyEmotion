@@ -1,5 +1,9 @@
+html,
 body {
-  min-height: 200px;
+    width: 100%;
+    height: 100%;
+}
+body {
   padding-top: 50px;
   font-family: 'Lato', sans-serif;
   color: #777777;
@@ -86,7 +90,8 @@ p {
 }
 .balloonWrapper {
 	position: fixed;
-	top: 1500px;
+	top: 40px;
+	left: 50%;
 	-webkit-transition: all 1500ms ease;
 	-moz-transition: all 1500ms ease;
 	-o-transition: all 1500ms ease;
@@ -99,6 +104,12 @@ p {
 	-o-transform: translateZ(0);
 	transform: translateZ(0);
 	z-index: 1000;
+	
+	transform: translate(-196px, 0px);
+-webkit-transform: translate(-196px, 0px);
+-moz-transform: translate(-196px, 0px);
+-o-transform: translate(-196px, 0px);
+-ms-transform: translate(-196px, 0px);
 }
 .scrollActive .balloonWrapper {
 	position: fixed;
@@ -129,4 +140,146 @@ p {
 h1.ribbon-azul {
     text-align: center;
     line-height: 100px;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg-sky.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+}
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    background-color: #eb872c;
+}
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #f0f0f0;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+.widgets-top{
+    background-color: #1e91ad;
+    padding-right: 15px;
+}
+.fe-logo {
+    margin-top: 40px;
+}
+.kid{
+	z-index: 2;
+	position: absolute;
+	bottom:0;
+	left: 50%;
+	transform: translate(-70%, 0%);
+}
+.rainbow{
+	z-index: 3;
+	position: absolute;
+	bottom: 0;
+}
+.stack {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: bottom;
+    height: 300px;
+}
+.slogan {
+    margin: 40px 0;
+}
+.slogan img{
+	margin-left: auto;
+	margin-right: auto;
 }

@@ -21,8 +21,8 @@
   </head>
 
   <body>
-<!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -31,16 +31,42 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class=""><a href="#"></a></li>
+            <li class=""><a href="#">WHY FAMILY EMOTION</a></li>
+            <li class=""><a href="#">ACCOMMODATIONS</a></li>
+            <li class=""><a href="#">FAMILY EMOTION INCLUSIONS</a></li>
+            <li class=""><a href="#">BEYOND ALL INCLUSIVE</a></li>
+            <li class="widgets-top pull-right" style="color:#fff !important;"><a href="#" style="display: inline-block;color:#fff !important;">WIDGET</a>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Air / Hotel
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Hotel Only
+            </label>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+    
+    
+<header id="top" class="header">
+    <div class="text-vertical-center">
+	    <div class="fe-logo"><img src="img/fe-logo.png"></div>
+        <div class="slogan"><img class="img-responsive" src="img/something-better-for-families.png"></div>
+        <br>
+        <a href="#fe" class="btn btn-dark btn-lg">START HERE!</a>
+        <div class="stack">
+        <div class="kid"><img class="img-responsive" src="img/kid.png"></div>
+        <div class="rainbow"><img class="img-responsive" src="img/rainbow.svg"></div>
+        </div>
+    </div>
+</header>
 
+
+<!--
 <section>
 	<div class="head-box">
 		<div class="vertical-center">
@@ -50,13 +76,14 @@
 		</div>
 	</div>
 </section>
+-->
 
 
-<section>
+<section id="fe">
 	<div class="container">
 		<div class="row">
 			<div class="hidden-xs hidden-sm col-md-2 col-lg-2 no-left-padding no-right-padding">
-				<div class="balloonWrapper">
+<div class="balloonWrappe">
 						<img src="img/balloon.png">
 					</div> 
 			</div>
@@ -69,8 +96,6 @@
 		
 		<div class="row"><!-- start here -->
 			<div class="col-md-offset-2 col-lg-offset-2 col-sm-12 col-md-10 col-lg-10">
-				
-					
 					<span class="col-xs-12 visible-xs"><img src="img/starthere_ribbon.png"></span>
 					<p class="azul2"><span class="pull-right hidden-xs"><img src="img/starthere_ribbon4.png"></span><strong>Select your setting & Style of accommodations</strong><br /> From 2 bedroom Villa Style Suite to complete<br /> Luxury Residences.... <strong>The choice is yours...</strong></p>
 <hr class="empty-20"/>
@@ -194,28 +219,50 @@
     <script src="modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="modules/holderjs/holder.min.js"></script>
     <script src="modules/wow/dist/wow.min.js"></script>
+    <script>
+              new WOW().init();
+              </script>
 
+<!--
 <script type="text/javascript">
 	$(function() {
-	// Set this variable with the height of your sidebar + header
 	var getHeaderHeight = 500;
 	
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > (getHeaderHeight) ) {
 			$( ".balloonWrapper" ).css({
 				"position": "fixed",
-				"top": "60px"
+				"top": "60px",
+				"left": "initial"
 			});
 		} else {
 			$( ".balloonWrapper" ).css({
 				"position": "fixed",
-				"top": "700px"
+				"top": "40px",
+				"left": "calc(50% - 197px)"
 			});
 		}
 	});
 	});
 </script>
-
+-->
+<script>
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
     
   </body>
 </html>
