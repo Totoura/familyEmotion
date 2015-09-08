@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <meta name="description" content="">
     <meta name="author" content="">
@@ -11,29 +11,32 @@
     <title>Family Emotion</title>
 
     <!-- CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href="modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="modules/transition/css/transition-animations.css"/>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/extralayers.css" />
-    <link rel="stylesheet" href="css/navstylechange.css" />
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="modules/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-	<script type="text/javascript" src="modules/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-	<link rel="stylesheet" href="modules/rs-plugin/css/settings.css" />
-	
-	<style>
-		.bannercontainer {
-		width:100%;
-		position:relative;
-		padding:0;
-		}
-		.banner{
-		width:100%;
-		position:relative;
-		}
-	</style>
+    
+    <!-- get jQuery from the google apis -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+
+    <!-- CSS STYLE-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    
+     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>   
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+
+	<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="css/extralayers.css" media="screen" />	
+	<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+	<!-- GOOGLE FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
+    
   </head>
   
   <body>  
@@ -51,11 +54,11 @@
 	    </div>
 	    <div id="navbar" class="navbar-collapse collapse">
 	      <ul class="nav navbar-nav">
-		    <li class="menu"><a href="javascript:void(0);" class="pt-trigger active" data-animation="24-25-26" data-goto="1">INTRO</a></li>
+		    <li class="menu"><a href="javascript:void(0);" class="pt-trigger active" data-animation="24-25-26" data-goto="1">REALLY?</a></li>
 	        <li class="menu"><a href="javascript:void(0);" class="pt-trigger" data-animation="24-25-26" data-goto="2">WHY FAMILY EMOTION</a></li>
 	        <li class="menu"><a href="javascript:void(0);" class="pt-trigger" data-animation="38-39-40" data-goto="3">ACCOMMODATIONS</a></li>
-	        <li class="menu"><a href="#include">FAMILY EMOTION INCLUSIONS</a></li>
-	        <li class="menu"><a href="#">BEYOND ALL INCLUSIVE</a></li>
+	        <li class="menu"><a href="#include">INCLUSIONS</a></li>
+	        <li class="menu"><a href="#">BEYOND</a></li>
 	        <li class="widgets-top pull-right" style="color:#fff !important;"><a href="#" style="display: inline-block;color:#fff !important;">WIDGET</a>
 	        <label class="radio-inline">
 	          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Air / Hotel
@@ -68,43 +71,19 @@
 	    </div><!--/.nav-collapse -->
 	  </div>
 	</nav>
-
-
-<div class="pt-page pt-page-3">
+	
+	<div class="header pt-page pt-page-1">
 	<!-- START REVOLUTION SLIDER 4.5.0 fullwidth mode -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900' rel='stylesheet' type='text/css'>
-	<!--
-	#################################
-		- THEMEPUNCH BANNER -
-	#################################
-	-->
-	<div class="tp-banner-container" id="intro">
+	<div class="tp-banner-container">
 		<div class="tp-banner" >
 				<ul>	<!-- SLIDE  -->
-	<li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-thumb="images/fullslide1-320x200.jpg"  data-saveperformance="off"  data-title="Slide">
+	<li data-transition="fade" data-slotamount="1" data-masterspeed="1000"  data-saveperformance="off"  data-title="Slide">
 		<!-- MAIN IMAGE -->
-		<img src="images/fullslide1.jpg"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+		<img src="img/bg-sky.jpg"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 		<!-- LAYERS -->
 
 		<!-- LAYER NR. 1 -->
-		<div class="tp-caption light_heavy_70_shadowed lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="250"
-			data-y="center" data-voffset="-70"
-			data-speed="600"
-			data-start="800"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">OUR CREDO
-		</div>
-
-		<!-- LAYER NR. 2 -->
-		<div class="tp-caption light_medium_30_shadowed lfb ltt tp-resizeme"
+		<div class="tp-caption light_medium_30_shadowed lfr lfr tp-resizeme"
 			data-x="center" data-hoffset="225"
 			data-y="center" data-voffset="40"
 			data-speed="600"
@@ -116,250 +95,94 @@
 			data-endelementdelay="0.1"
 			data-endspeed="500"
 			data-endeasing="Power4.easeIn"
-			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Details matter, it's worth<br/>waiting to get it right.<br/><span style="font-size:24px;font-weight:400;">― Steve Jobs</span>
-		</div>
-
-		<!-- LAYER NR. 3 -->
-		<div class="tp-caption bignumbers_white lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="-400"
-			data-y="center" data-voffset="-75"
-			data-speed="800"
-			data-start="600"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">01
+			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><img src="img/bucket.png">
 		</div>
 	</li>
-	<!-- SLIDE  -->
-	<li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-thumb="images/fullslide2-320x200.jpg"  data-saveperformance="off"  data-title="Slide">
-		<!-- MAIN IMAGE -->
-		<img src="images/fullslide2.jpg"  alt="fullslide2"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-		<!-- LAYERS -->
-
-		<!-- LAYER NR. 1 -->
-		<div class="tp-caption light_heavy_70_shadowed lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="270"
-			data-y="center" data-voffset="-70"
-			data-speed="600"
-			data-start="800"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">JUST A BLUR
-		</div>
-
-		<!-- LAYER NR. 2 -->
-		<div class="tp-caption light_medium_30_shadowed lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="270"
-			data-y="center" data-voffset="40"
-			data-speed="600"
-			data-start="900"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">You only live once, but if<br/>you do it right, once is enough.<br/><span style="font-size:24px;font-weight:400;">―  Mae West</span>
-		</div>
-
-		<!-- LAYER NR. 3 -->
-		<div class="tp-caption bignumbers_white lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="-400"
-			data-y="center" data-voffset="-75"
-			data-speed="800"
-			data-start="600"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">02
-		</div>
-	</li>
-	<!-- SLIDE  -->
-	<li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-thumb="images/fullslide6-320x200.jpg"  data-saveperformance="off"  data-title="Slide">
-		<!-- MAIN IMAGE -->
-		<img src="images/fullslide6.jpg"  alt="fullslide6"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-		<!-- LAYERS -->
-
-		<!-- LAYER NR. 1 -->
-		<div class="tp-caption light_heavy_70_shadowed lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="215"
-			data-y="center" data-voffset="-70"
-			data-speed="600"
-			data-start="800"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">SKY HIGH
-		</div>
-
-		<!-- LAYER NR. 2 -->
-		<div class="tp-caption light_medium_30_shadowed lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="290"
-			data-y="center" data-voffset="80"
-			data-speed="600"
-			data-start="900"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Imperfection is beauty, madness<br/> is genius and it's better to be<br/> absolutely ridiculous than<br/> absolutely boring.<br/><span style="font-size:24px;font-weight:400;">―  Marilyn Monroe</span>
-		</div>
-
-		<!-- LAYER NR. 3 -->
-		<div class="tp-caption bignumbers_white lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="-400"
-			data-y="center" data-voffset="-75"
-			data-speed="800"
-			data-start="600"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">03
-		</div>
-	</li>
-	<!-- SLIDE  -->
-	<li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-thumb="images/fullslide7-320x200.jpg"  data-saveperformance="off"  data-title="Slide">
-		<!-- MAIN IMAGE -->
-		<img src="images/fullslide7.jpg"  alt="fullslide7"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-		<!-- LAYERS -->
-
-		<!-- LAYER NR. 1 -->
-		<div class="tp-caption light_heavy_70_shadowed lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="270"
-			data-y="center" data-voffset="-70"
-			data-speed="600"
-			data-start="800"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">YUM COFFEE
-		</div>
-
-		<!-- LAYER NR. 2 -->
-		<div class="tp-caption light_medium_30_shadowed lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="295"
-			data-y="center" data-voffset="40"
-			data-speed="600"
-			data-start="900"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">As long as there was coffee in the<br/> world, how bad could things be?<br/><span style="font-size:24px;font-weight:400;">―   Cassandra Clare</span>
-		</div>
-
-		<!-- LAYER NR. 3 -->
-		<div class="tp-caption bignumbers_white lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="-400"
-			data-y="center" data-voffset="-75"
-			data-speed="800"
-			data-start="600"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">04
-		</div>
-	</li>
-	<!-- SLIDE  -->
-	<li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-thumb="images/fullslide8-320x200.jpg"  data-saveperformance="off"  data-title="Slide">
-		<!-- MAIN IMAGE -->
-		<img src="images/fullslide8.jpg"  alt="fullslide8"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-		<!-- LAYERS -->
-
-		<!-- LAYER NR. 1 -->
-		<div class="tp-caption light_heavy_70_shadowed lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="225"
-			data-y="center" data-voffset="-70"
-			data-speed="600"
-			data-start="800"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">RUN WILD
-		</div>
-
-		<!-- LAYER NR. 2 -->
-		<div class="tp-caption light_medium_30_shadowed lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="305"
-			data-y="center" data-voffset="40"
-			data-speed="600"
-			data-start="900"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Happiness is an accident of nature,<br/>a beautiful and flawless aberration.<br/><span style="font-size:24px;font-weight:400;">―   Pat Conroy</span>
-		</div>
-
-		<!-- LAYER NR. 3 -->
-		<div class="tp-caption bignumbers_white lfb ltt tp-resizeme"
-			data-x="center" data-hoffset="-400"
-			data-y="center" data-voffset="-75"
-			data-speed="800"
-			data-start="600"
-			data-easing="Power4.easeOut"
-			data-splitin="none"
-			data-splitout="none"
-			data-elementdelay="0.01"
-			data-endelementdelay="0.1"
-			data-endspeed="500"
-			data-endeasing="Power4.easeIn"
-			style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">05
-
-		</div>
-	</li>
-</ul>		
+</ul>	
 			<div class="tp-bannertimer"></div>	
 		</div>
-	</div>
-</div>
-			
-<!-- END REVOLUTION SLIDER -->	
+	</div>	
 
+			<script type="text/javascript">
+
+				jQuery(document).ready(function() {
+				
+					
+								
+					jQuery('.tp-banner').show().revolution(
+					{
+						dottedOverlay:"none",
+						delay:9000,
+						startwidth:1170,
+						startheight:700,
+						
+						navigationType:"none",
+						navigationArrows:"solo",
+						
+						touchenabled:"on",
+						onHoverStop:"on",
+						
+						swipe_velocity: 0.7,
+						swipe_min_touches: 1,
+						swipe_max_touches: 1,
+						drag_block_vertical: false,
+												
+						keyboardNavigation:"on",
+						
+						navigationHAlign:"center",
+						navigationVAlign:"bottom",
+						navigationHOffset:0,
+						navigationVOffset:20,
+
+						soloArrowLeftHalign:"left",
+						soloArrowLeftValign:"center",
+						soloArrowLeftHOffset:20,
+						soloArrowLeftVOffset:0,
+
+						soloArrowRightHalign:"right",
+						soloArrowRightValign:"center",
+						soloArrowRightHOffset:20,
+						soloArrowRightVOffset:0,
+								
+						shadow:0,
+						fullWidth:"off",
+						fullScreen:"on",
+
+						spinner:"spinner0",
+						
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+
+						shuffle:"off",
+						
+												
+						forceFullWidth:"off",						
+						fullScreenAlignForce:"off",						
+						minFullScreenHeight:"800",						
+												
+						hideThumbsOnMobile:"off",
+						hideNavDelayOnMobile:1500,						
+						hideBulletsOnMobile:"off",
+						hideArrowsOnMobile:"off",
+						hideThumbsUnderResolution:0,
+						
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						startWithSlide:0
+					});
+					
+					
+					
+									
+				});	//ready
+				
+			</script>
+			
+<!-- END REVOLUTION SLIDER -->
+	</div>
+		
 	<div class="header pt-page pt-page-2">
 		<div class="family-emotion-content">
 		<div class="container">
@@ -395,7 +218,6 @@
 </div><!--/pt-wrapper -->
 
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="modules/transition/js/transition.js"></script>
     <script>
@@ -404,90 +226,6 @@
 	    $(this).addClass("active");
 	    });
 	</script>
-<script type="text/javascript">
-
-				jQuery(document).ready(function() {
-				
-					
-								
-					jQuery('.tp-banner').show().revolution(
-					{
-						dottedOverlay:"none",
-						delay:9000,
-						startwidth:1170,
-						startheight:700,
-						hideThumbs:200,
-						
-						thumbWidth:100,
-						thumbHeight:50,
-						thumbAmount:5,
-						
-						navigationType:"none",
-						navigationArrows:"solo",
-						navigationStyle:"preview1",
-						
-						touchenabled:"on",
-						onHoverStop:"on",
-						
-						swipe_velocity: 0.7,
-						swipe_min_touches: 1,
-						swipe_max_touches: 1,
-						drag_block_vertical: false,
-												
-												
-						keyboardNavigation:"on",
-						
-						navigationHAlign:"center",
-						navigationVAlign:"bottom",
-						navigationHOffset:0,
-						navigationVOffset:20,
-
-						soloArrowLeftHalign:"left",
-						soloArrowLeftValign:"center",
-						soloArrowLeftHOffset:20,
-						soloArrowLeftVOffset:0,
-
-						soloArrowRightHalign:"right",
-						soloArrowRightValign:"center",
-						soloArrowRightHOffset:20,
-						soloArrowRightVOffset:0,
-								
-						shadow:0,
-						fullWidth:"off",
-						fullScreen:"on",
-
-						spinner:"spinner0",
-						
-						stopLoop:"off",
-						stopAfterLoops:-1,
-						stopAtSlide:-1,
-
-						shuffle:"off",
-						
-												
-						forceFullWidth:"off",						
-						fullScreenAlignForce:"off",						
-						minFullScreenHeight:"400",						
-												
-						hideThumbsOnMobile:"off",
-						hideNavDelayOnMobile:1500,						
-						hideBulletsOnMobile:"off",
-						hideArrowsOnMobile:"off",
-						hideThumbsUnderResolution:0,
-						
-						hideSliderAtLimit:0,
-						hideCaptionAtLimit:0,
-						hideAllCaptionAtLilmit:0,
-						startWithSlide:0,
-						fullScreenOffsetContainer: ".header"	
-					});
-					
-					
-					
-									
-				});	//ready
-				
-			</script>
     
   </body>
 </html>
