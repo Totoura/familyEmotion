@@ -2,11 +2,14 @@ html,
 body {
     width: 100%;
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 body {
-  padding-top: 50px;
+  margin: 0;
   font-family: 'Lato', sans-serif;
   color: #777777;
+  overflow: hidden;
 }
 .navbar {
     margin-bottom: 0px;
@@ -24,7 +27,9 @@ background: -ms-linear-gradient(top,  #ffffff 6%,#71bae7 43%,#b9e2f4 64%,#71bae7
 background: linear-gradient(to bottom,  #ffffff 6%,#71bae7 43%,#b9e2f4 64%,#71bae7 64%,#71bae7 65%,#58bdd4 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#58bdd4',GradientType=0 ); /* IE6-9 */
 }
-
+section {
+    padding: 100px 0;
+}
 .vertical-center {
     display: table;
     position: relative;
@@ -59,15 +64,14 @@ h1{
 	font-style: italic !important;
     display: inline-block;
 }
- section {
-    margin-bottom: 40px;
-    padding-top: 80px;
-}
 .no-left-padding {
     padding-left: 0 !important;
 }
 .no-right-padding {
     padding-right: 0 !important;
+}
+.no-padding{
+	padding:0px !important;
 }
 p {
     font-family: 'Lato', sans-serif;
@@ -116,8 +120,7 @@ p {
 	position: fixed;
 }
 
-#family {
-  background: url(../img/family.jpg) no-repeat center bottom fixed; 
+#family { 
   display: table;
   height: 650px;
   position: relative;
@@ -150,11 +153,6 @@ h1.ribbon-azul {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg-sky.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 .text-vertical-center {
     display: table-cell;
@@ -258,10 +256,18 @@ h1.ribbon-azul {
 .fe-logo {
     margin-top: 40px;
 }
+.fe-logo2 {
+    text-align: center;
+        max-width: 100%;
+    height: auto;
+}
 .kid{
 	z-index: 1;
     position: absolute;
     bottom: 30px;
+}
+.kid2{
+	z-index: 1;
 }
 .rainbow{
 	z-index: 5;
@@ -270,13 +276,17 @@ h1.ribbon-azul {
 }
 .stack {
     position: relative;
-    display: inline-block;
     width: 100%;
     vertical-align: bottom;
-    height: 300px;
+    height: 400px;
+}
+.stack2 {
+    vertical-align: bottom;
+    position: absolute;
+    top: 50%;
 }
 .slogan {
-    margin: 40px 0 0;
+    margin: 20px 0 0;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -284,4 +294,194 @@ h1.ribbon-azul {
 .slogan img{
 	margin-left: auto;
 	margin-right: auto;
+}
+.bucket {
+    z-index: 2;
+    position: absolute;
+    bottom: 30px;
+    right: 10%;
+}
+.family-emotion {
+	position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-image: url(../img/sky2.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.family-emotion .family-emotion-content {
+        position: absolute;
+        width: 100%;
+        bottom: 0%;
+        -webkit-transform: translateY(-30%);
+        -ms-transform: translateY(-30%);
+        transform: translateY(-30%);
+}
+.family-emotion .family-emotion-content .text {
+    position: absolute;
+    left: 52%;
+    bottom: 0;
+    -webkit-transform: translatex(0%);
+    -ms-transform: translatex(0%);
+    transform: translatex(0%);
+    padding: 40px;
+}
+section#accommodations.family-together {
+	position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-image: url(../img/marival-petate-bk.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+section#accommodations.family-together .family-together-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+section#accommodations.family-together .family-together-content .text {
+    position: absolute;
+    left: 52%;
+    bottom: 0;
+    -webkit-transform: translatex(0%);
+    -ms-transform: translatex(0%);
+    transform: translatex(0%);
+    padding: 40px;
+}
+@media(max-height:768px) {
+	.family-emotion .family-emotion-content {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        -webkit-transform: translatex(0%);
+		-ms-transform: translatex(0%);
+		transform: translatex(0%);
+}
+}
+.go-resort {
+    display: block;
+    width: 80%;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 0;
+    border-color: #1e91ad;
+    border-width: 2px;
+    color: #1e91ad;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+.pt-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+}
+
+.pt-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.pt-page-current, .no-js .pt-page {
+    visibility: visible;
+    z-index: 1;
+}
+
+.no-js body {
+    overflow: auto;
+}
+
+.pt-trigger-container {
+    position: absolute;
+    width: 300px;
+    z-index: 999999;
+    left: 50%;
+    margin-top: 75px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+a.pt-trigger.active {
+    background-color: #1e91ad !important;
+    transform: translateY(2px);
+    color: #fff !important;
+}
+.pt-trigger {
+
+
+}
+
+/* Page Styles */
+.pt-page-ontop {
+    z-index: 999;
+}
+
+.pt-page h1 {
+    position: absolute;
+    font-weight: 300;
+    font-size: 4.4em;
+    line-height: 1;
+    letter-spacing: 6px;
+    margin: 0;
+    top: 1%;
+    width: 100%;
+    text-align: center;
+    word-spacing: -0.3em;
+}
+
+
+
+/*No Animation Support Message Style*/
+.pt-message {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #da475c;
+    color: #fff;
+    text-align: center;
+}
+
+.pt-message p {
+    margin: 0;
+    line-height: 60px;
+    font-size: 26px;
+}
+
+.no-cssanimations .pt-message {
+    display: block;
 }
